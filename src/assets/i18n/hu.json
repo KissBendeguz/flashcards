@@ -1,5 +1,6 @@
 {
     "header":{
+        "home": "Főoldal",
         "mycards": "Kártyáim",
         "eximport" : "Krátyák ex-importálása"
     }
