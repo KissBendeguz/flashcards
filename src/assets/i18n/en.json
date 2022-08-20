@@ -3,5 +3,12 @@
         "home": "Home",
         "mycards": "My cards",
         "eximport" : "Import & export cards"
+    },
+    "home":{
+        "title": "Hey there!",
+        "subtitle1": "What is",
+        "subtitle2": "idk",
+        "text1": "By simply providing a question and a list of correct answers you can create your own unique learning cards. Taking the effort to make the cards and then 'playing' with them hopefully helps you memorize the given answers.",
+        "text2": "idk"
     }
 }

@@ -1,0 +1,33 @@
+@use '../../shared/variables' as *;
+.homeContainer{
+    margin: 0 20vw;
+
+    h1{
+        text-align: center;
+        font-size: 34px;
+        font-weight: 400;
+        padding: 5px;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    #flashcards{
+        color: #279af1;
+    }
+
+    @include lt-md{
+        margin: 0 15vw;
+    }
+    @include lt-sm{
+        margin: 0 10vw;
+    }
+    @include xs{
+        margin: 0 5vw;
+    }
+}
