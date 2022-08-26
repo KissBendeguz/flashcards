@@ -4,6 +4,18 @@
         "mycards": "Kártyáim",
         "eximport": "Kártyák ex-importálása",
         "language": "Nyelv" 
+    },
+    "home":{
+        "title": "Halihó!",
 
+        "subtitle1": "Mire is jó ez az oldal?",
+        "text1": "Egszerűen egy kérdés és a helyes válaszok listájának megadásával létrehozhatja saját egyedi tanulási kártyáit. A kártyák létrehozásával, és azokkal való játék remélhetőleg segít megjegyezni a megadott válaszokat.",
+        
+        "subtitle2": "Tanulj gyorsan!",
+        "text2": "Csökkentse tanulási idejét és növelje hatékonyságát egyedi, saját készítésű kártyákkal!"
+    },
+    "404":{
+        "paragraph1": "Sajnáljuk, úgytűnik az oldal amit keres nem létezik.",
+        "paragraph2":"Próbáljon meg visszatérni a kezdőlapra, és navigáljon a kívánt oldalra újra."
     }
 }
