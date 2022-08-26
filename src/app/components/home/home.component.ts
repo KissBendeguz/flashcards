@@ -6,10 +6,12 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  card:string = 'assets/img/card_placeholder.png';
 
   constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -2,6 +2,8 @@
     "header":{
         "home": "Főoldal",
         "mycards": "Kártyáim",
-        "eximport" : "Kártyák ex-importálása"
+        "eximport": "Kártyák ex-importálása",
+        "language": "Nyelv" 
+
     }
 }

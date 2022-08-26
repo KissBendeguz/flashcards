@@ -15,6 +15,12 @@ export class HeaderComponent implements OnInit {
     this.translate.use(language);
   }
 
+  toggleMenu(){
+    const nav = document.querySelector('.nav');
+
+    nav?.toggleAttribute('show');
+  }
+
   ngOnInit(): void {
   }
 
