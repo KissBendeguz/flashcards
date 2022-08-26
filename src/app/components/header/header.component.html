@@ -1,10 +1,10 @@
 <header class="header">
     <span class="brand">Flashcards</span>
     <nav class="nav">
-        <a href="#">{{'header.home' | translate}}</a>
-        <a href="#">{{'header.mycards' | translate}}</a>
-        <a href="#">{{'header.eximport' | translate}}</a>
-        <a href="#">{{'header.language' | translate}}</a>
+        <a routerLink="/home">{{'header.home' | translate}}</a>
+        <a routerLink="/cards">{{'header.mycards' | translate}}</a>
+        <a routerLink="/eximport">{{'header.eximport' | translate}}</a>
+        <a routerLink="/language">{{'header.language' | translate}}</a>
 
     </nav>
     <div class="menu" (click)="toggleMenu()">

@@ -9,7 +9,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component'; 
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CardsComponent } from './components/cards/cards.component'; 
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

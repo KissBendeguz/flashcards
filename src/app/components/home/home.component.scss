@@ -4,7 +4,19 @@
 
     color: #f7f7ff;
 
-    
+
+
+    .cardImage{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 250px;
+            
+            filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
+            
+        }
+    }
+
 
     h1{
         text-align: center;
@@ -15,6 +27,7 @@
     h2{
         font-size: 25px;
         font-weight: 300;
+
     }
 
     p{
