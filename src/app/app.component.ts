@@ -15,8 +15,8 @@ export class AppComponent {
   }
 
   private langChange = this.translate.onLangChange.subscribe((e) => {
-    console.log(`language changed to ${this.translate.currentLang}`);
+    //console.log(`language changed to ${this.translate.currentLang}`);
 
-    window.localStorage.setItem("flashcards", this.translate.currentLang);
+    window.localStorage.setItem("flashcards.language", this.translate.currentLang);
   })
 }
