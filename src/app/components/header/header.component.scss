@@ -23,6 +23,21 @@
 
     .brand{
         margin-left: 3rem;
+        display: flex;
+        justify-content: center;
+        
+        
+
+        img{
+            &:first-child{
+                margin-left: 4px;
+            }
+            width: 24px;
+            height: 20px;
+            padding: 4px;
+            cursor: pointer;
+            
+        }
     }
 
 
