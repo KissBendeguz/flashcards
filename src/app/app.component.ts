@@ -11,10 +11,12 @@ export class AppComponent {
 
   constructor(private translate: TranslateService){
     translate.addLangs(['en','hu']);
-    translate.setDefaultLang('en');
+    translate.setDefaultLang(window.localStorage.getItem('flashcards.language') || 'en');
   }
 
-  public useLanguage(language: string){
-    this.translate.use(language);
-  }
+  private langChange = this.translate.onLangChange.subscribe((e) => {
+    console.log(`language changed to ${this.translate.currentLang}`);
+
+    window.localStorage.setItem("flashcards", this.translate.currentLang);
+  })
 }
