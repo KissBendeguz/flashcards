@@ -10,7 +10,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { CardsComponent } from './components/cards/cards.component'; 
+import { CardsComponent } from './components/cards/cards.component';
+import { CreateCardsComponent } from './components/create-cards/create-cards.component'; 
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CardsComponent } from './components/cards/cards.component';
     FooterComponent,
     HomeComponent,
     PageNotFoundComponent,
-    CardsComponent
+    CardsComponent,
+    CreateCardsComponent
   ],
   imports: [
     BrowserModule,
