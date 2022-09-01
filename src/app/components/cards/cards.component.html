@@ -1,1 +1,50 @@
-<p>cards works!</p>
+<div class="cardsMainContainer">
+    <div class="noCards" *ngIf="noCards">
+        <h2>cards.nocardsfound</h2>
+    </div>
+    <div class="createCards">
+        <span>cards.create</span>
+        <input type="button" value="+" routerLink="/cards/create">
+    </div>
+
+    <!-- TODO temporary elements, make them dynamic -->
+    <div class="cardsGroup">
+        <div class="cardsGroupTitle">group.title</div>
+        <div class="cardsContainer">
+            <div class="cards">
+                <div class="cardsTitle">cards.titlee</div>
+                <div class="cardsInfo">
+                    <div class="cardsRate">cards.rate <span>67%</span></div>
+                    <div class="cardsCreatedAt">2022.09.01</div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cardsTitle">cards.title</div>
+                <div class="cardsInfo">
+                    <div class="cardsRate">cards.rate <span>67%</span></div>
+                    <div class="cardsCreatedAt">2022.09.01</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cardsGroup">
+        <div class="cardsGroupTitle">group2.title</div>
+        <div class="cardsContainer">
+            <div class="cards">
+                <div class="cardsTitle">cards.titlee</div>
+                <div class="cardsInfo">
+                    <div class="cardsRate">cards.rate <span>67%</span></div>
+                    <div class="cardsCreatedAt">2022.09.01</div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cardsTitle">cards.title</div>
+                <div class="cardsInfo">
+                    <div class="cardsRate">cards.rate <span>67%</span></div>
+                    <div class="cardsCreatedAt">2022.09.01</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
