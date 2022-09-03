@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CardStorage } from './cardstorage';
+import { CardStorage } from '../interfaces/cardstorage';
 import { v4 as uuid } from 'uuid';
 import { TranslateService } from '@ngx-translate/core';
 
