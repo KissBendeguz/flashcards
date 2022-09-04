@@ -11,7 +11,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CardsComponent } from './components/cards/cards.component';
-import { CreateCardsComponent } from './components/create-cards/create-cards.component'; 
+import { CreateCardsComponent } from './components/create-cards/create-cards.component';
+import { GameComponent } from './components/game/game.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { CreateCardsComponent } from './components/create-cards/create-cards.com
     HomeComponent,
     PageNotFoundComponent,
     CardsComponent,
-    CreateCardsComponent
+    CreateCardsComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
