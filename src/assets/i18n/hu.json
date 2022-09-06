@@ -2,8 +2,7 @@
     "header":{
         "home": "Főoldal",
         "mycards": "Kártyáim",
-        "eximport": "Kártyák ex-importálása",
-        "language": "Nyelv" 
+        "eximport": "Kártyák ex-importálása"
     },
     "home":{
         "title": "Halihó!",

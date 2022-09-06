@@ -2,8 +2,7 @@
     "header":{
         "home": "Home",
         "mycards": "My cards",
-        "eximport" : "Import & export cards",
-        "language": "Language"
+        "eximport" : "Import & export cards"
     },
     "home":{
         "title": "Hey there!",
