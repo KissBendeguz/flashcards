@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Game } from 'src/app/models/game';
 
 @Component({
   selector: 'app-game',
@@ -7,12 +8,26 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent implements OnInit {
-  gameId: any;
+  public readonly gameInstance: Game;
+  public readonly gameId: any;
 
   constructor(private route: ActivatedRoute) {
+    //temporary variables for readonly functionality
+    let id;
+    let qMap = new Map<string,string>();
+
+
     this.route.params.subscribe(params=>{
-      this.gameId = params['id'];
+      id = params['id'];
     })
+
+    this.gameId = id;
+    this.gameInstance = new Game(this.gameId,qMap);
+
+
+    console.log(`valid: ${this.gameInstance.isValidInstance().toString()}`);
+
+
   }
 
   ngOnInit(): void {
