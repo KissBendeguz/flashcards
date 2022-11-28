@@ -1,39 +1,61 @@
 @use '../../shared/variables' as *;
 .homeContainer{
     margin: 0 20vw;
+    padding: 6vw;
+    
+    .main-header{
+        h1,span{
+            margin:0;
+        }
+        h1{
+            font-size:3.3rem;
+            margin-top: .2rem;
+            margin-bottom: .4rem;
+        }
+        span{
+            font-size: 1.3rem;
+            color: #525960
+        }
+        margin-bottom: 5rem;
+    }
+    .corevalues{
+        
+        .values{
+            display: flex;
+            justify-content: center;
+            @include lt-sm{
+                flex-direction: column;
+            }
 
-    color: #f7f7ff;
+            div{
 
+                padding: 12px;
+                flex-wrap: wrap;
 
-
-    .cardImage{
-        display: flex;
-        justify-content: center;
-        img{
-            width: 250px;
-            
-            filter: drop-shadow(5px 5px 5px rgba(0,0,0,.4));
-            
+            }
         }
     }
 
 
-    h1{
+
+    .title-line{
         text-align: center;
-        font-size: 40px;
-        font-weight: 400;
-        padding: 5px;
-    }
-    h2{
-        font-size: 30px;
-        font-weight: 300;
+        position: relative;
+        &>:first-child{
+            position: relative;
+            background-color: #f7f7ff;
+            z-index: 30;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        &>:nth-child(2){
 
-    }
-
-    p{
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 300;
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 50%;
+            border-top: solid 1px #ddd;
+        }
     }
     #flashcards{
         color: #279af1;

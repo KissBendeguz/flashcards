@@ -23,6 +23,7 @@ export class SettingsService {
     return this.currentStorage.language;
   }
 
+  // *cards
   public addCards(title: string, created: string, questions: Array<Array<string>>, asked?: number, success?: number) {
     if (asked == null) {
       asked = 0;
@@ -32,12 +33,23 @@ export class SettingsService {
       success = 0;
     }
     this.currentStorage.cards[uuid()] = {
-      //id: uuid(),
+
       title, created, questions, asked, success
     }
 
     this.saveCurrentStorage();
   }
+
+  public getCards(){
+    if(!this.localStorageSupport()){
+      return false;
+    }
+    return this.currentStorage.cards;
+  }
+
+  /*public getCardById(id:string){
+    return this.getCards[id];
+  }*/
 
   private localStorageSupport(){
     try {
@@ -55,6 +67,9 @@ export class SettingsService {
     }else{
       
     }
+  }
+  public getCurrentStorage(){
+    return this.currentStorage;
   }
   
 

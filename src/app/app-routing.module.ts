@@ -9,8 +9,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'cards',children:[
     {path: '', component: CardsComponent},
-    {path: ':id', component: GameComponent},
-    {path: 'create', component: CreateCardsComponent}
+    {path: 'create', component: CreateCardsComponent},
+    {path: ':id', component: GameComponent}
   ]},
   {path: '', redirectTo: '/home', pathMatch:'full'},
   { path: '**', component: PageNotFoundComponent }

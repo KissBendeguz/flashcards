@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from 'src/app/services/settings.service';
 
 @Component({
   selector: 'app-cards',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public settings:SettingsService) { }
 
   ngOnInit(): void {
+    let obj = this.settings.getCards();
+    if(obj!==false){{
+      console.log(obj[Object.keys(obj)[0]]);
+    }}
+    
   }
 
   noCards:boolean = true;
